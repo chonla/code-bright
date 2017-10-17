@@ -1,0 +1,19 @@
+{
+  "name": "code-bright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "base.js",
+  "scripts": {
+    "build": "node build.js",
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  },
+  "dependencies": {
+    "del": "^3.0.0"
+  }
+}

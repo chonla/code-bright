@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Test syntax highlight</title>
+</head>
+<body>
+
+<div id="code">*** Variables ***
+${String Variable}    Hello
+${Number Variable Name}    ${123}
+&{Dictionary Variable Name}    aaa=123    bbb=1234
+@{List Variable}    1    3    5    7
+
+*** Test Cases ***
+Test Case Name
+    Keyword Name 1    Param 1    Param2
+    Keyword Name 2    Param 1    Param2
+
+*** Keywords ***
+Keyword Name 1     # comment
+    Do Something
+
+# Comment</div>
+
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script src="dist/all.js"></script>
+<script type="text/javascript">
+$(function(){
+  var options = {
+    "theme": "dark",
+    "line_number": true
+  };
+  $("#code").html($("#code").html().highlight("robotframework", options));
+});
+</script>
+</body>
+</html>
